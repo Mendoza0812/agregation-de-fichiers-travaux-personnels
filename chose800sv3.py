@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Mon Jun 13 19:34:26 2022
+Created on Sun Jun 19 20:19:51 2022
 
 @author: Max-Louis
 """
@@ -150,3 +150,10 @@ chose800 = pd.DataFrame (products_list).transpose()
 chose800.columns = ['IdNom','NatNom','Syno','natSyno', 'val800'] 
 chose800sv = chose800.sort_values('val800', ascending = False)
 print(chose800sv)
+
+
+synoChoix = chose800sv.iloc[0:4]
+
+val = synoChoix['val800']
+
+mot2 = synoChoix['Syno']

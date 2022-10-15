@@ -39,48 +39,45 @@ for loop in range (1):
             
             incrLetter = 0
             motidN = df.iloc[incr,0]
-            incrStr = ""
             
-            while len(incrStr) != len(motidN):
-            
-                while carSpec < 19 and liCarSpec[carSpec] in motidN[incrLetter] :
-                    print(' while carSpec < 19 and liCarSpec[carSpec] in df.iloc[incr,0] ')
+            while carSpec < 19 and liCarSpec[carSpec] in df.iloc[incr,0] :
+                print(' while carSpec < 19 and liCarSpec[carSpec] in df.iloc[incr,0] ')
+                
+                boolCarSpec = True
+                
+                if carSpec <= 2:
                     
-                    boolCarSpec = True
+                    strg0 = df.iloc[incr,0].replace(liCarSpec[carSpec],'a')
                     
-                    if carSpec <= 2:
-                        
-                        strg0 = df.iloc[incr,0].replace(liCarSpec[carSpec],'a')
-                        
-                    elif carSpec >= 3 and carSpec <= 6:
-                        
-                        strg0 = df.iloc[incr,0].replace(liCarSpec[carSpec],'e')
-                        
-                    elif carSpec >= 7 and carSpec <= 8:
-                        
-                        strg0 = df.iloc[incr,0].replace(liCarSpec[carSpec],'i')
+                elif carSpec >= 3 and carSpec <= 6:
                     
-                    elif carSpec >= 9 and carSpec <= 10:
-                        
-                        strg0 = df.iloc[incr,0].replace(liCarSpec[carSpec],'0')
-                        
-                    elif carSpec >= 11 and carSpec <= 13:
-                        
-                        strg0 = df.iloc[incr,0].replace(liCarSpec[carSpec],'u')
+                    strg0 = df.iloc[incr,0].replace(liCarSpec[carSpec],'e')
                     
-                    elif carSpec == 14:
-                        
-                        strg0 = df.iloc[incr,0].replace(liCarSpec[carSpec],'y')
+                elif carSpec >= 7 and carSpec <= 8:
                     
-                    elif carSpec == 15:
-                        
-                        strg0 = df.iloc[incr,0].replace(liCarSpec[carSpec],'c')
+                    strg0 = df.iloc[incr,0].replace(liCarSpec[carSpec],'i')
+                
+                elif carSpec >= 9 and carSpec <= 10:
                     
-                    else:
-                        
-                        strg0 = df.iloc[incr,0].replace(liCarSpec[carSpec],' ')
-                        
-                    carSpec += 1
+                    strg0 = df.iloc[incr,0].replace(liCarSpec[carSpec],'0')
+                    
+                elif carSpec >= 11 and carSpec <= 13:
+                    
+                    strg0 = df.iloc[incr,0].replace(liCarSpec[carSpec],'u')
+                
+                elif carSpec == 14:
+                    
+                    strg0 = df.iloc[incr,0].replace(liCarSpec[carSpec],'y')
+                
+                elif carSpec == 15:
+                    
+                    strg0 = df.iloc[incr,0].replace(liCarSpec[carSpec],'c')
+                
+                else:
+                    
+                    strg0 = df.iloc[incr,0].replace(liCarSpec[carSpec],' ')
+                    
+                carSpec += 1
                 
         carSpec += 1
         
