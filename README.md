@@ -1,2 +1,2 @@
 # agregation-de-fichiers-travaux-personnels
-On m'a conseillé d'exposer tous les travaux déjà effectués dans mon apprentissage sur la programmation informatique
+On m'a conseillé d'exposer tous les travaux déjà effectués dans mon apprentissage sur la programmation informatique. Vous trouverez beaucoup de fichiers en python pour de la librairie pandas, quelque fois avec du matplotlib, beautifulsoup, les travaux effectués pour apprendre le HTML et le CSS sur W3Schools, enfin c'est pas très rangé... J'apprends sur le tas
